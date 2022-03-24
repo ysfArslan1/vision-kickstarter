@@ -15,7 +15,7 @@ class UnetInferrer:
         self.image_size = self.config.data.image_size
 
         self.saved_path = 'weights/unet'
-        self.model = tf.saved_model.load(self.saved_path)
+        self.model = None
 
         # print(list(    self.model.signatures.keys()))
 
